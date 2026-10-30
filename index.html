@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Minha IA</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+
+    <!-- MEIO: chat -->
+    <main class="main">
+      <header class="topbar">
+        <h1 id="chatTitle">Minha IA</h1>
+        <button id="menuBtn" class="menu-btn" aria-label="Abrir conversas">☰</button>
+      </header>
+
+      <div id="messages" class="messages"></div>
+
+      <form id="form" class="composer" autocomplete="off">
+        <textarea id="input" rows="1" placeholder="Pergunte alguma coisa..." maxlength="4000"></textarea>
+        <button id="sendBtn" type="submit" aria-label="Enviar">Enviar</button>
+      </form>
+    </main>
+
+    <!-- DIREITA: projetos / perguntas já feitas -->
+    <aside id="sidebar" class="sidebar">
+      <button id="newChat" class="new-chat">+ Criar um novo</button>
+      <div class="list-title">Projetos e perguntas</div>
+      <ul id="chatList" class="chat-list"></ul>
+    </aside>
+
+    <div id="overlay" class="overlay"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
